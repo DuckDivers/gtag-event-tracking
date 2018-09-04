@@ -2,7 +2,7 @@
 /*
   	Plugin Name: Google Analytics Event Tracking
   	Plugin URI: https://www.duckdiverllc.com/gtag-event-tracking
-  	Version: 0.1
+  	Version: 1.0
   	Contributors: thehowarde
 	Author: Howard Ehrenberg
 	Author URI: https://www.howardehrenberg.com
@@ -12,7 +12,7 @@
 	Tested up to: 4.9
 	Stable tag: 1.0
 	Requires PHP: 5.6
-  	Description: Add event tracking to Links
+  	Description: Add Google Analytics Event Tracking to any element, works with gtag only.
 	License:  GNU General Public License v3
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
     Text Domain: dd-gtag-event

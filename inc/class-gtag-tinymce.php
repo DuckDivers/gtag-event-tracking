@@ -44,19 +44,6 @@ class DD_GTAG_TinyMCE {
             add_editor_style( plugin_dir_url(__FILE__) . 'dd-editor-style.css' );
         }
 
-//		function get_popup(){
-//			
-//			include_once plugin_dir_path (__FILE__) . 'tiny-mce-popup.php';
-//			
-//			wp_die();
-//		}	
-		
-		//function add_locale( $locales ) {
-//			
-//			$locales['edsanimate'] = plugin_dir_path ( __FILE__ ) . 'eds-tinymce-plugin-langs.php';
-//			return $locales;
-//			
-//		}
 }
 
 	
