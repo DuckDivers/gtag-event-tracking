@@ -7,7 +7,7 @@ class DD_GTAG_TinyMCE {
     
         public function __construct(){
            	add_action('init', array( $this, 'add_dd_gtag_button') );
-            add_action( 'wp_ajax_dd_gtag_get_popup', array( $this, 'get_popup' ) );
+//            add_action( 'wp_ajax_dd_gtag_get_popup', array( $this, 'get_popup' ) );
             add_action( 'init', array ($this, 'my_theme_add_editor_styles' ) );
         }
 		
@@ -44,12 +44,12 @@ class DD_GTAG_TinyMCE {
             add_editor_style( plugin_dir_url(__FILE__) . 'dd-editor-style.css' );
         }
 
-		function get_popup(){
-			
-			include_once plugin_dir_path (__FILE__) . 'tiny-mce-popup.php';
-			
-			wp_die();
-		}	
+//		function get_popup(){
+//			
+//			include_once plugin_dir_path (__FILE__) . 'tiny-mce-popup.php';
+//			
+//			wp_die();
+//		}	
 		
 		//function add_locale( $locales ) {
 //			

@@ -4,7 +4,14 @@ i.mce-i-graph:before {
     content: "\f238";
     font: 400 20px/1 dashicons
 }
-#GTAG #link-options label {
+
+p#event-attributes {
+    display: block;
+    margin-top: 1.2em;
+    font-size: 18px;
+    font-weight: 500;
+}
+/*#GTAG #link-options label {
     display: block;
     position: relative;
     margin: 1.4em 0;
@@ -54,4 +61,4 @@ button.dd_gtag-insert.btn-insert {
 #GTAG #link-options input#dd-gtag-target {
     left: 110px;
     width: 20px;
-}
+}*/

@@ -84,31 +84,36 @@
         $('input#dd_gtag_action').blur(function(){
                 dd_gtag_action = $(this).val();
             });
-        $('input#dd_gtag_category').blur(function(){
-                dd_gtag_category = $(this).val();
-            });
-        $('input#dd_gtag_label').blur(function(){
-                dd_gtag_label = $(this).val();
-            });
-        
-        var dd_category = '';    
-            
-        if (dd_gtag_category){
-            dd_category = 'data-category="'+dd_gtag_category+'"';
-            }    
-        if (dd_gtag_label){
-            dd_category = 'data-label="'+dd_gtag_label+'"';
-            }    
             
         $('.btn-insert').on( 'click', function( event ) {
-                console.log('click');
+
                 var editorContent = parentEditor.selection.getContent();							
 
                 if( null == editorContent || "" == editorContent ) {							
                     editorContent = ' <p>Please add your content in this area.</p> ';														
                 } 
+                
+                if ($('#dd-gtag-target').is(':checked')) {
+                    dd_target = ' target="_blank"';
+                }
+            
+                dd_gtag_category = $('input#dd_gtag_category').val();
+                if (dd_gtag_category !== ""){
+                    dd_category = 'data-category="'+dd_gtag_category+'"';
+                    }   
+            
+                $('input#dd_gtag_label').blur(function(){
+                        dd_gtag_label = $(this).val();
+                    });
 
-                var output  =     ['<a href="'+dd_gtag_url+'" data-event="true" data-action="' + dd_gtag_action + ' ' +dd_gtag_label + ' ' + dd_category + '>' + dd_gtag_text + '</a>']. join('');
+                var dd_category, dd_label, dd_target = '';    
+
+                
+                if (dd_gtag_label){
+                    dd_label = 'data-label="'+dd_gtag_label+'"';
+                    }    
+            
+                var output  =     ['<a href="'+dd_gtag_url+'" data-event="true" data-action="' + dd_gtag_action + '" ' + dd_label + ' ' + dd_category + dd_target + '>' + dd_gtag_text + '</a>']. join('');
 
                 parentEditor.execCommand('mceInsertContent', false, output);					
 
