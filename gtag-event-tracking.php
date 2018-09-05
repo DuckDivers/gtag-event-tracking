@@ -1,6 +1,6 @@
 <?php
 /*
-  	Plugin Name: Google Analytics Event Tracking
+  	Plugin Name: Analytics Event Tracking for GTAG
   	Plugin URI: https://www.duckdiverllc.com/gtag-event-tracking
   	Version: 1.0
   	Contributors: thehowarde
